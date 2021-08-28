@@ -1,0 +1,11 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
