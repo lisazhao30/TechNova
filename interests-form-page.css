@@ -1,3 +1,44 @@
 form {
     background-color: aqua;
 }
+
+.container{
+    width: 300px;
+    height: 400px;
+    margin: 8% auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container form{
+    width: 400px;
+    position: absolute;
+    top: 100px;
+    left: 40px;
+}
+
+.btn-box{
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button{
+    width: 110px;
+    height: 35px;
+    margin: 0 10px;
+    background-color: #8CD8F0;
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+#Form2 {
+    left: 450px
+}

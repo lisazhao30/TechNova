@@ -6,53 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cura</title>
     <link rel="stylesheet" href="interests-form-page.css">
+    <script src="interests-form-page.js"></script>
 </head>
 <body>
     <header>
         <h1>fill out your info below!</h1>
     </header>
-    <form id="interests-form" action="">
-        <h1>Tell us more about yourself!</h1>
-        <div class="tab">
-            <p>Are you looking for a mentor or mentee?</p>
-            <input type="radio" id="mentor" name="mentor_mentee" value="mentor">
-            <label for="mentor">Mentor</label><br>
-            <input type="radio" id="mentee" name="mentor_mentee" value="mentee">
-            <label for="mentee">Mentee</label><br>
-            <input type="radio" id="both" name="mentor_mentee" value="both">
-            <label for="both">Both</label><br>
-        </div>
-        <div class="tab">
-            <p>What is your level of education?</p>
-            <input type="radio" id="high-school" name="level_education" value="high-school">
-            <label for="high-school">High school</label><br>
-            <input type="radio" id="college-university" name="level_education" value="college-university">
-            <label for="college-university">College/university</label><br>
-            <input type="radio" id="workplace" name="level_education" value="workplace">
-            <label for="workplace">In the tech workplace or recently graduated</label><br>
-            <p>Which tech field(s) are you interested in?</p>
-            <input type="checkbox" id="field1" name="field1" value="software">
-            <label for="field1"> Software development</label><br>
-            <input type="checkbox" id="field2" name="field2" value="hardware">
-            <label for="field2"> Hardwire/firmware</label><br>
-            <input type="checkbox" id="field3" name="field3" value="datascience">
-            <label for="field3"> Data science</label><br>
-            <input type="checkbox" id="field4" name="field4" value="design">
-            <label for="field4"> UI/UX design</label><br>
-            <input type="checkbox" id="field5" name="field5" value="productmanagement">
-            <label for="field5"> Product management</label><br>
-            <input type="checkbox" id="field6" name="field6" value="projectmanagement">
-            <label for="field6"> Project management</label><br>
-            <input type="checkbox" id="field7" name="field7" value="business">
-            <label for="field7"> Business/consulting</label><br>
-        </div>
-        <div style="overflow:auto;">
-            <div style="float:right">
-            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-            </div>
-        </div>
+    <div class="container">
+        <form id="Form1">
+            <h1>Tell us more about yourself!</h1>
+                <p>Are you looking for a mentor or mentee?</p>
+                <input type="radio" id="mentor" name="mentor_mentee" value="mentor">
+                <label for="mentor">Mentor</label><br>
+                <input type="radio" id="mentee" name="mentor_mentee" value="mentee">
+                <label for="mentee">Mentee</label><br>
+                <input type="radio" id="both" name="mentor_mentee" value="both" >
+                <label for="both">Both</label><br>
+                <div class="btn-box">
+                    <button type="button" id="Next1">Next</button>
+                </div>
+        </form>
+        <form id="Form2">
+                <p>What is your level of education?</p>
+                <input type="radio" id="high-school" name="level_education" value="high-school">
+                <label for="high-school">High school</label><br>
+                <input type="radio" id="college-university" name="level_education" value="college-university">
+                <label for="college-university">College/university</label><br>
+                <input type="radio" id="workplace" name="level_education" value="workplace">
+                <label for="workplace">In the tech workplace or recently graduated</label><br>
+                <p>Which tech field(s) are you interested in?</p>
+                <input type="checkbox" id="field1" name="field1" value="software">
+                <label for="field1"> Software development</label><br>
+                <input type="checkbox" id="field2" name="field2" value="hardware">
+                <label for="field2"> Hardwire/firmware</label><br>
+                <input type="checkbox" id="field3" name="field3" value="datascience">
+                <label for="field3"> Data science</label><br>
+                <input type="checkbox" id="field4" name="field4" value="design">
+                <label for="field4"> UI/UX design</label><br>
+                <input type="checkbox" id="field5" name="field5" value="productmanagement">
+                <label for="field5"> Product management</label><br>
+                <input type="checkbox" id="field6" name="field6" value="projectmanagement">
+                <label for="field6"> Project management</label><br>
+                <input type="checkbox" id="field7" name="field7" value="business">
+                <label for="field7"> Business/consulting</label><br>
+                <div class="btn-box">
+                    <button type="button" id="Back1">Back</button>
+                    <button type="button" id="Next2">Next</button>
+                </div>
+        </form>
+    </div>
         <div class="tab">Blah blah</div>
         <input type="submit" value="Submit">
-    </form>
 </body>
 </html>
