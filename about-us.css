@@ -1,0 +1,21 @@
+body {
+    background-color: #B69CEC;
+}
+
+.faq1-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+}
+
+.faq1-content h2 {
+    color: black;
+}
+
+.faq1-content h2:hover {
+    background: #ddd;
+}
+
+.faq:hover .faq1-content {
+    display: block;
+}
