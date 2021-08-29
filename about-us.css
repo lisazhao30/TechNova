@@ -2,14 +2,33 @@ body {
     background-color: #B69CEC;
 }
 
+.faq {
+    position: relative;
+    display: inline-block;
+}
+
+.faq1 {
+    background-color: #FFF495;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+}
+
 .faq1-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #FFF495;
+    min-width: 300px;
+    border-radius: 30px;
+    z-index: 1;
+    padding: 10px;
 }
 
-.faq1-content h2 {
+.faq1-content p {
     color: black;
+    display: block;
 }
 
 .faq1-content h2:hover {
