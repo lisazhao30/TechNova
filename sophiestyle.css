@@ -1,13 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Nunito, sans-serif;
+  border-radius: 50px;
 }
 
 body {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 150px; /* align content would't work :| */
+  margin-top: 100px; /* align content would't work :| */
 }
 
 .yellow-box {
@@ -17,13 +19,12 @@ body {
 
 .blue-box {
   background-color: #8cd8f0;
-  height: 400px;
+  height: 500px;
 }
 
 .yellow-box,
 .blue-box {
   width: 500px;
-  border-radius: 50px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -41,7 +42,6 @@ form {
 input,
 button {
   border: none;
-  border-radius: 50px;
   padding: 10px;
   background-color: white;
 }
@@ -62,7 +62,6 @@ button:hover {
 
 .purple-box {
   display: flex;
-  border-radius: 50px;
   background-color: #b69cec;
   justify-content: center;
   align-content: center;
@@ -102,8 +101,8 @@ button:hover {
 #pronoun-box {
   background-color: white;
   padding: 5px 10px;
-  border-radius: 50px;
   color: grey;
   font-size: 13px;
   font-family: arial, sans-serif;
 } /* not sure how to change the colour of the actual drop-down list*/
+
