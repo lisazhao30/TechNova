@@ -16,7 +16,26 @@ body {
     border-radius: 30px;
 }
 
+.faq2 {
+    background-color: #FFF495;
+    color: black;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 30px;
+}
+
 .faq1-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF495;
+    min-width: 300px;
+    border-radius: 30px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.faq2-content {
     display: none;
     position: absolute;
     background-color: #FFF495;
@@ -31,10 +50,31 @@ body {
     display: block;
 }
 
+
+.faq2-content p {
+    color: black;
+    display: block;
+}
+
 .faq1-content h2:hover {
+    background: #ddd;
+}
+
+
+.faq2-content h2:hover {
     background: #ddd;
 }
 
 .faq:hover .faq1-content {
     display: block;
+}
+
+.faq:hover .faq2-content {
+    display: block;
+}
+
+.blue-blob-about-us {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
