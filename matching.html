@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cura - matching</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a href="./chat.html"
+      ><img src="./pictures/chat.png" alt="chat icon" id="chat" />
+    </a>
+    <img src="./pictures/Vector.svg" alt="" class="blob" id="pinkblob" />
+    <img src="./pictures/vector2.svg" alt="" class="blob" id="blueblob" />
+    <img src="./pictures/vector4.svg" alt="" class="blob" id="purpleblob" />
+    <div class="yellow-box">
+      <div id="img">
+        <img src="./pictures/trixie.png" alt="profile picture" id="pfp" />
+      </div>
+      <div id="info">
+        <p><strong>name:</strong> jane doe</p>
+        <p><strong>age:</strong> 27</p>
+        <p><strong>pronouns:</strong> she/her</p>
+        <p><strong>education:</strong> BASc from MIT</p>
+        <p><strong>feild of interest:</strong> engineering</p>
+        <p><strong>current company:</strong> google</p>
+      </div>
+      <div id="buttons">
+        <button data-popup-target="#popup">match!</button>
+        <!-- pop-up starts-->
+        <div class="popup" id="popup">
+          <div class="popup-header">
+            <div class="title"><h3>get cura premium</h3></div>
+            <div data-close-button class="close-button">&times;</div>
+          </div>
+
+          <div class="popup-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            impedit iusto cupiditate illo omnis amet? Quam distinctio
+            voluptatibus necessitatibus, libero nostrum autem corrupti est quo
+            in sit recusandae nam iusto eos obcaecati debitis, possimus aliquid.
+            Natus quo adipisci distinctio necessitatibus in repellendus
+            obcaecati eaque minima soluta a officiis nemo voluptatem molestiae
+            exercitationem facere cum facilis voluptas cumque earum molestias ea
+            iusto, voluptatum tempore sunt. Sint enim et doloribus harum odit
+            voluptatum sunt perferendis ducimus, rerum, commodi, nihil
+            reprehenderit aperiam nemo.
+          </div>
+        </div>
+
+        <div id="overlay"></div>
+        <!-- pop-up ends -->
+        <button>next ➜</button>
+      </div>
+    </div>
+  </body>
+</html>

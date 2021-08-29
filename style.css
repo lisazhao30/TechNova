@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0px;
+  border-radius: 50px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px; /* align content would't work :| */
+}
+
+.yellow-box {
+  width: 80%;
+  min-width: 700px;
+  max-width: 900px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff495;
+  height: 60%;
+  position: relative;
+}
+
+#chat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  margin-top: -20px;
+  z-index: 100; /* not sure why but there is still margin around this TT*/
+}
+
+#chat:hover {
+  cursor: pointer;
+}
+
+img {
+  height: 400px;
+  padding: 50px;
+}
+
+#info {
+  background-color: #b69cec;
+  padding: 50px;
+  width: 30%;
+  height: 40%;
+  line-height: 200%;
+  border-radius: 50px;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  overflow: scroll;
+}
+
+#buttons {
+  position: absolute;
+  bottom: 20px;
+}
+
+button {
+  border-radius: 50px;
+  padding: 10px;
+  border: none;
+  background-color: white;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#pfp {
+  position: relative;
+  right: 150px;
+}
+
+.blob {
+  position: absolute;
+  z-index: 0;
+}
+
+#pinkblob {
+  top: 0;
+  right: 0;
+  margin: -80px -80px 0 0;
+}
+
+#blueblob {
+  top: 0;
+  left: 0;
+  margin-top: -70px;
+}
+
+#purpleblob {
+  bottom: 0;
+  left: 60px;
+  margin-bottom: -50px;
+}
+
+#name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff495;
+  padding: 50px;
+  font-size: 30px;
+  border-radius: 50px;
+  width: 30%;
+}
+
+#messages {
+  background-color: #b69cec;
+  width: 90%;
+  display: flex;
+  height: 500px;
+  border-radius: 50px;
+}
+
+#last-message {
+  background-color: white;
+  height: 50px;
+  text-align: end;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border-radius: 50px;
+  text-align: center;
+  z-index: 100;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+  padding: 50px;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0;
+  border-bottom: 1px solid black;
+}
+
+.popup-header .close-button {
+  cursor: pointer;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}

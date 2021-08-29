@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px; /* align content would't work :| */
+}
+
+.yellow-box {
+  background-color: #fff495;
+  height: 300px;
+}
+
+.blue-box {
+  background-color: #8cd8f0;
+  height: 400px;
+}
+
+.yellow-box,
+.blue-box {
+  width: 500px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+input,
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: white;
+}
+
+#submit:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.back {
+  position: absolute;
+  left: 100px;
+  bottom: 100px; /* i feel like this kinda doesn't look good */
+}
+
+.purple-box {
+  display: flex;
+  border-radius: 50px;
+  background-color: #b69cec;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 500px;
+}
+
+.blob {
+  height: 500px;
+  position: absolute;
+  z-index: -1;
+}
+
+#pinkblob {
+  right: 0;
+  top: 0;
+}
+
+#yellowblob {
+  bottom: 0;
+  left: 0;
+}
+
+#blueblob {
+  right: 50px;
+  bottom: 40px;
+}
+
+#purpleblob {
+  left: 0;
+  bottom: 0;
+}
+
+#pronoun-box {
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: grey;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+} /* not sure how to change the colour of the actual drop-down list*/
